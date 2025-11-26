@@ -48,7 +48,7 @@ jobs:
 
       - name: Run crawler
         env:
-          FEISHU_WEBHOOK_URL: ${{secrets.https://www.feishu.cn/flow/api/trigger-webhook/3de5b1b5a1a73a24d1f7f0ff17cf2350}}
+          FEISHU_WEBHOOK_URL: ${{Secrets.FEISHU_WEBHOOK_URL}}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
